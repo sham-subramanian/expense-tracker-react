@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    background-color: #f0f2f3;
+    color: #003060;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+nav{
+    position: relative;
+    margin-left: 25px;
+    transition: all 0.6s ease;
+    transform-origin: center;
+}
+
+.Dashboard-div{
+    padding: 8px 25px;
+    border-radius: 6px;
+    background-color: #f99e1f;
+    color: #f0f2f3;
+    font-size: 20px;
+    transition: all 0.6s ease;
+    box-shadow: 0px 0px 10px #f99e1f;
+    cursor: pointer;
+}
+
+.Dashboard-div:hover{
+    background-color: #f0f2f3;
+    color: #f99e1f;
+    border: 1px solid #f99e1f;
+    transform: scale(1.1);
+}
+
+nav:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+main{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero{
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   background: url(../assets/home-image.png);
+   margin: 0;
+   box-shadow: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10,25,40,0.75);
+    z-index: 1;
+}
+
+.hero >*{
+    position: relative;
+    z-index: 2;
+}
+
+.content-section{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+    background-color: #f0f2f3;
+    width: 494px;
+    height: 394px;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.6s ease;
+    box-shadow: 0px 0px 20px #f0f2f3;
+    margin-bottom: 250px;
+}
+
+.content-section:hover{
+    transform: scale(1.1);
+    background-color: #003060;
+}
+
+.content-section h1{
+    padding: 15px;
+    margin-top: 60px;
+    color: white;
+    font-size: 50px;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 700;
+}
+
+.content-section p{
+    padding: 20px 20px;
+    color: white;
+}
+
+.content-section section{
+    padding: 10px;
+}
+
+.start-btn{
+    padding: 8px 30px;
+    border-radius: 6px;
+    margin-right: 8px;
+    background-color: #f99e1f;
+    color: #f0f2f3;
+    font-size: 15px;
+    border: none;
+    transition: all 0.6s ease;
+    box-shadow: 0px 0px 10px #f99e1f;
+}
+
+.start-btn:hover {
+    background-color: #f0f2f3;
+    color: #f99e1f;
+    border: 1px solid #f99e1f;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.Dashboard-btn{
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin-left: 8px;
+    background-color:#f0f2f3 ;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #dcdee0;
+    transition: all 0.6s ease;
+    box-shadow: 0px 0px 15px white inset;
+}
+
+.Dashboard-btn:hover{
+    background-color: #003060;
+    color: #f0f2f3;
+    border: none;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.Features{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../assets/home-image.png);
+    margin: 0;
+    position: relative;
+}
+
+.Features::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10,25,40,0.75);
+    z-index: 1;
+}
+
+.Features > *{
+    position: relative;
+    z-index: 2;
+}
+
+.feature-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 45px;
+    padding-top: 250px;
+}
+
+.Feature-div{
+    width: 450px;
+    height: 280px;
+     box-shadow:
+     -8px -8px 20px rgba(255, 255, 255, 0.4),
+      8px  8px 30px rgba(0, 0, 0, 0.25);
+    border-right: none;
+    border-bottom: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.6s ease;
+    color: #f0f2f3;
+    font-family: "Google Sans", sans-serif;
+}
+
+.Feature-div:hover{
+    transform: scale(1.1,1.1);
+}
+
+.Feature-div h2{
+    margin-top: 45px;
+    margin-bottom: 55px;
+}
+
